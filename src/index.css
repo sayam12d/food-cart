@@ -1,0 +1,153 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #333;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 12px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page Layout */
+.home {
+  padding: 20px;
+}
+
+.food-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.food-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.food-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.food-item h3 {
+  margin: 5px 0;
+}
+
+.food-item p {
+  margin: 5px 0 10px;
+  font-weight: bold;
+}
+
+.food-item button {
+  background-color: #28a745;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.food-item button:hover {
+  background-color: #218838;
+}
+
+/* Cart Page Layout */
+.cart {
+  padding: 20px;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.cart-item .details {
+  flex-grow: 1;
+  margin-left: 16px;
+  text-align: left;
+}
+
+.cart-item .details h4 {
+  margin: 0 0 5px;
+}
+
+.cart-item .details p {
+  margin: 0;
+  color: #555;
+  font-weight: bold;
+}
+
+.cart-item .quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item .quantity-controls button {
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.cart-item button {
+  background-color: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #c82333;
+}
+
+/* Total section */
+.cart h3 {
+  text-align: right;
+  margin-top: 20px;
+}
